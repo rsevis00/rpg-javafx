@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "RPG JavaFX",
+        "request": "launch",
+        "mainClass": "rpg.Main",
+        "projectName": "rpg-javafx"
+      }
+    ]
+  }
+  

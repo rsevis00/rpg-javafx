@@ -21,7 +21,9 @@ public class App extends Application {
         root.setPrefSize(800, 600);
         root.setStyle("-fx-background-color: #a0d8ef;");
 
-        player = new Player();
+        TileMap tileMap = new TileMap(root);
+
+        player = new Player(tileMap);
         root.getChildren().add(player.getView());
 
         Scene scene = new Scene(root);

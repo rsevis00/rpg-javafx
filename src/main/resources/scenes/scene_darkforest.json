@@ -1,0 +1,15 @@
+{
+    "id": "scene_darkforest",
+    "text": "🌌 Te adentras en la oscuridad. Las ramas crujen a tu paso. Algo te observa desde las sombras...",
+    "choices": [
+      {
+        "label": "Encender una antorcha",
+        "next": "scene_safe"
+      },
+      {
+        "label": "Huir hacia atrás",
+        "next": "intro_forest"
+      }
+    ]
+  }
+  

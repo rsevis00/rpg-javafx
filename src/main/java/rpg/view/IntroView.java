@@ -26,12 +26,19 @@ public class IntroView {
         introText.setFocusTraversable(false);
         introText.setStyle("-fx-font-size: 16px; -fx-control-inner-background: #1e1e1e; -fx-text-fill: #eeeeee;");
 
-        Button continuarBtn = new Button("▶️ Continuar");
+        Button continuarBtn = new Button("▶️ Comenzar historia");
         continuarBtn.setStyle("-fx-font-size: 14px; -fx-padding: 10px 20px;");
         continuarBtn.setOnAction(e -> {
-            GameView gameView = new GameView(stage);
-            stage.setScene(gameView.getScene());
+            SceneView firstScene = new SceneView(stage, "intro_forest");
+            stage.setScene(firstScene.getScene());
         });
+
+        // Button batallaBtn = new Button("⚔️ Batalla");
+        // continuarBtn.setStyle("-fx-font-size: 14px; -fx-padding: 10px 20px;");
+        // continuarBtn.setOnAction(e -> {
+        //     GameView gameView = new GameView(stage);
+        //     stage.setScene(gameView.getScene());
+        // });
 
         VBox layout = new VBox(20, introText, continuarBtn);
         layout.setPadding(new Insets(30));

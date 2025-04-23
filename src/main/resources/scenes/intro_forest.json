@@ -1,0 +1,15 @@
+{
+    "id": "intro_forest",
+    "text": "🌲 Te despiertas en un bosque silencioso. No recuerdas cómo llegaste aquí, pero el aire huele a magia.\n\nUna tenue luz se filtra entre los árboles y oyes un susurro lejano.",
+    "choices": [
+      {
+        "label": "Avanzar hacia la luz",
+        "next": "scene_clearing"
+      },
+      {
+        "label": "Explorar el bosque oscuro",
+        "next": "scene_darkforest"
+      }
+    ]
+  }
+  

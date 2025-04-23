@@ -1,0 +1,15 @@
+{
+    "id": "scene_clearing",
+    "text": "✨ Llegas a un claro bañado por la luz del sol. Una criatura brillante se materializa ante ti. Te sonríe.",
+    "choices": [
+      {
+        "label": "Hablar con la criatura",
+        "next": "scene_fairy"
+      },
+      {
+        "label": "Ignorarla y seguir",
+        "next": "scene_path"
+      }
+    ]
+  }
+  

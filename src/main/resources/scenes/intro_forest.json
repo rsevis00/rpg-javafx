@@ -1,14 +1,20 @@
 {
     "id": "intro_forest",
-    "text": "🌲 Te despiertas en un bosque silencioso. No recuerdas cómo llegaste aquí, pero el aire huele a magia.\n\nUna tenue luz se filtra entre los árboles y oyes un susurro lejano.",
+    "text": "Te despiertas en un bosque...",
+    "experience": 10,
+    "enemyId": null,
+    "items": [ "potion_small" ],
     "choices": [
       {
-        "label": "Avanzar hacia la luz",
-        "next": "scene_clearing"
+        "label": "Explorar la luz",
+        "next": "scene_clearing",
+        "experience": 5,
+        "enemyId": "fairy_guardian",
+        "items": ["magic_leaf"]
       },
       {
-        "label": "Explorar el bosque oscuro",
-        "next": "scene_darkforest"
+        "label": "Volver a dormir",
+        "next": "scene_sleep"
       }
     ]
   }

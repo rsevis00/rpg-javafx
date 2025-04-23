@@ -14,14 +14,12 @@ public class NameInputView {
 
     public NameInputView(Stage stage) {
         Label prompt = new Label("¿Cuál es tu nombre, aventurero?");
-        prompt.setStyle("-fx-font-size: 18px; -fx-text-fill: #eeeeee;");
 
         TextField nameInput = new TextField();
         nameInput.setPromptText("Escribe tu nombre");
         nameInput.setStyle("-fx-font-size: 14px;");
 
         Button continuarBtn = new Button("Comenzar aventura");
-        continuarBtn.setStyle("-fx-font-size: 14px; -fx-padding: 8px 20px;");
         continuarBtn.setOnAction(e -> {
             String name = nameInput.getText().trim();
             if (!name.isEmpty()) {
@@ -38,9 +36,10 @@ public class NameInputView {
         VBox layout = new VBox(15, prompt, nameInput, continuarBtn);
         layout.setPadding(new Insets(40));
         layout.setAlignment(Pos.CENTER);
-        layout.setStyle("-fx-background-color: #2b2b2b;");
 
         scene = new Scene(layout, 500, 300);
+        scene.getStylesheets().add(getClass().getResource("/styles/styles.css").toExternalForm());
+
     }
 
     public Scene getScene() {

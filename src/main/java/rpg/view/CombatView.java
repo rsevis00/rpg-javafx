@@ -20,28 +20,26 @@ public class CombatView {
 
     public CombatView(Stage stage) {
         Player player = GameController.getInstance().getPlayer();
-        Enemy enemy = new Enemy("Goblin", 30, 6, 2); // Se puede mejorar luego para ser aleatorio
+        Enemy enemy = new Enemy("Goblin","Goblin", 30, 6, 2); // Se puede mejorar luego para ser aleatorio
 
         this.combatManager = new CombatManager(player, enemy);
 
         statusLabel = new Label(getStatus());
-        statusLabel.setStyle("-fx-font-size: 14px; -fx-text-fill: #eeeeee;");
 
         combatLog = new TextArea("¡Te enfrentas a un " + enemy.getName() + "!\n");
         combatLog.setEditable(false);
         combatLog.setWrapText(true);
-        combatLog.setStyle("-fx-control-inner-background: #1e1e1e; -fx-text-fill: #eeeeee;");
 
         attackBtn = new Button("⚔️ Atacar");
-        attackBtn.setStyle("-fx-font-size: 14px;");
         attackBtn.setOnAction(e -> ejecutarTurno());
 
         VBox layout = new VBox(15, statusLabel, combatLog, attackBtn);
         layout.setPadding(new Insets(20));
         layout.setAlignment(Pos.CENTER);
-        layout.setStyle("-fx-background-color: #2b2b2b;");
 
         scene = new Scene(layout, 600, 400);
+        scene.getStylesheets().add(getClass().getResource("/styles/styles.css").toExternalForm());
+
     }
 
     private void ejecutarTurno() {

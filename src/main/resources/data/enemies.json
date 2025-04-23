@@ -1,0 +1,17 @@
+[
+    {
+      "id": "fairy_guardian",
+      "name": "Guardiana del bosque",
+      "hp": 40,
+      "attack": 12,
+      "defense": 3
+    },
+    {
+      "id": "dark_wolf",
+      "name": "Lobo oscuro",
+      "hp": 30,
+      "attack": 8,
+      "defense": 2
+    }
+  ]
+  

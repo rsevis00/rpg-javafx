@@ -13,13 +13,10 @@ public class MainMenuView {
 
     public MainMenuView(Stage stage) {
         Label title = new Label("RPG de Texto");
-        title.setStyle("-fx-font-size: 28px; -fx-text-fill: #eeeeee;");
 
         Button startButton = new Button("🎮 Nueva Partida");
         Button exitButton = new Button("❌ Salir");
 
-        startButton.setStyle("-fx-font-size: 16px; -fx-padding: 10px 20px;");
-        exitButton.setStyle("-fx-font-size: 16px; -fx-padding: 10px 20px;");
 
         startButton.setOnAction(e -> {
             NameInputView nameInput = new NameInputView(stage);
@@ -31,9 +28,10 @@ public class MainMenuView {
         VBox layout = new VBox(20, title, startButton, exitButton);
         layout.setAlignment(Pos.CENTER);
         layout.setPadding(new Insets(50));
-        layout.setStyle("-fx-background-color: #1e1e1e;");
 
         scene = new Scene(layout, 500, 300);
+        scene.getStylesheets().add(getClass().getResource("/styles/styles.css").toExternalForm());
+
     }
 
     public Scene getScene() {

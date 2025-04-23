@@ -16,10 +16,8 @@ public class GameView {
         var player = GameController.getInstance().getPlayer();
 
         Label bienvenida = new Label("Bienvenido, " + player.getName() + ". Estás listo para combatir.");
-        bienvenida.setStyle("-fx-font-size: 16px; -fx-text-fill: #eeeeee;");
 
         Button lucharBtn = new Button("⚔️ Iniciar combate");
-        lucharBtn.setStyle("-fx-font-size: 14px;");
         lucharBtn.setOnAction(e -> {
             CombatView combate = new CombatView(stage);
             stage.setScene(combate.getScene());
@@ -28,9 +26,10 @@ public class GameView {
         VBox layout = new VBox(20, bienvenida, lucharBtn);
         layout.setAlignment(Pos.CENTER);
         layout.setPadding(new Insets(40));
-        layout.setStyle("-fx-background-color: #2b2b2b;");
 
         scene = new Scene(layout, 600, 300);
+        scene.getStylesheets().add(getClass().getResource("/styles/styles.css").toExternalForm());
+
     }
 
     public Scene getScene() {

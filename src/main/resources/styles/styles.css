@@ -1,0 +1,26 @@
+.root {
+    -fx-background-color: #2b2b2b;
+    -fx-padding: 20px;
+}
+
+.label {
+    -fx-text-fill: #eeeeee;
+    -fx-font-size: 14px;
+}
+
+.text-area {
+    -fx-control-inner-background: #1e1e1e;
+    -fx-text-fill: #eeeeee;
+    -fx-font-size: 16px;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #444;
+    -fx-text-fill: #eeeeee;
+}
+
+.button:hover {
+    -fx-background-color: #666;
+}

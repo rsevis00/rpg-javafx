@@ -1,0 +1,15 @@
+[
+    {
+      "id": "potion_small",
+      "name": "Poción pequeña",
+      "description": "Cura 20 HP.",
+      "healAmount": 20
+    },
+    {
+      "id": "potion_large",
+      "name": "Poción grande",
+      "description": "Cura 50 HP.",
+      "healAmount": 50
+    }
+  ]
+  

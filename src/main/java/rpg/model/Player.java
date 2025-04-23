@@ -8,7 +8,8 @@ public class Player {
     private int defense;
     private int level;
     private int experience;
-
+    private Inventory inventory = new Inventory();
+    
     public Player(String name) {
         this.name = name;
         this.level = 1;
@@ -38,4 +39,9 @@ public class Player {
     public boolean isAlive() {
         return hp > 0;
     }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
 }

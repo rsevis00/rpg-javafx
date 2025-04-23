@@ -1,13 +1,13 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "type": "java",
-        "name": "RPG JavaFX",
-        "request": "launch",
-        "mainClass": "rpg.Main",
-        "projectName": "rpg-javafx"
-      }
-    ]
-  }
-  
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "RPG JavaFX (Ruta relativa)",
+      "request": "launch",
+      "mainClass": "rpg.Main",
+      "projectName": "rpg-javafx",
+      "vmArgs": "--module-path ${workspaceFolder}/javafx-sdk-23.0.1/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

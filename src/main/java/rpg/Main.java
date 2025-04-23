@@ -1,15 +1,15 @@
 package rpg;
 
 import javafx.application.Application;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import rpg.view.MainMenuView;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        MainMenu menu = new MainMenu(primaryStage);
         primaryStage.setTitle("RPG de Texto");
+        MainMenuView menu = new MainMenuView(primaryStage);
         primaryStage.setScene(menu.getScene());
         primaryStage.show();
     }
